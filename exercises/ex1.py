@@ -1,4 +1,4 @@
-from exercise.ex0 import Graph
+from exercises.ex0 import Graph
 
 
 class METISGraph:
@@ -24,7 +24,7 @@ class METISGraph:
         return path
 
 
-graph = Graph.read_graph()
+graph = Graph.from_file()
 graph = METISGraph(graph)
 p = graph.find_triangle()
 print(p)

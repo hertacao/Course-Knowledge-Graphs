@@ -1,0 +1,7 @@
+triangle = r"C:\Users\herta\PycharmProjects\Course-Knowledge-Graphs\data\simple-graphs\01-triangle.txt"
+empty = r"C:\Users\herta\PycharmProjects\Course-Knowledge-Graphs\data\simple-graphs02-empty.txt"
+k5 = r"C:\Users\herta\PycharmProjects\Course-Knowledge-Graphs\data\simple-graphs\03-k5.txt"
+s5 = r"C:\Users\herta\PycharmProjects\Course-Knowledge-Graphs\data\simple-graphs\04-s5.txt"
+random_small = r"C:\Users\herta\PycharmProjects\Course-Knowledge-Graphs\data\simple-graphs\05-random-small.txt"
+random_medium = r"C:\Users\herta\PycharmProjects\Course-Knowledge-Graphs\data\simple-graphs\06-random-medium.txt"
+random_big = r"C:\Users\herta\PycharmProjects\Course-Knowledge-Graphs\data\simple-graphs\07-random-big.txt"

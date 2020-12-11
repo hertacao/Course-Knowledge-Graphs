@@ -1,8 +1,18 @@
-class Graph:
+class DirectedGraph:
     def __init__(self, nodes, edges):
         self.nodes = nodes
         self.edges = edges
         self.degree = self.count_degree()
+
+    @classmethod
+    def from_file(cls, filestring):
+        f = open(filestring)
+        edges = [line.split() for line in f]
+        print("edges")
+        print(edges)
+        nodes = int(edges.pop(0).pop())
+        graph = cls(nodes, edges)
+        return graph
 
     def count_degree(self):
         degree = {}
@@ -22,16 +32,3 @@ class Graph:
         for node in self.degree:
             if self.degree[node] == 0:
                 print(node)
-
-    @staticmethod
-    def read_graph():
-        f = open("C:\\Users\\herta\\PycharmProjects\\Course-Knowledge-Graphs\\exercises\\00-introduction-to-python\\data\\01-triangle.txt")
-        edges = [line.strip('\n').split() for line in f]
-        nodes = int(edges.pop(0).pop())
-        return Graph(nodes, edges)
-
-
-graph = Graph.read_graph()
-print(graph.degree)
-graph.get_node_with_max_degree()
-graph.get_node_with_min_degree()
